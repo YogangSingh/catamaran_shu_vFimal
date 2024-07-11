@@ -27,11 +27,6 @@ wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/
 sudo apt-get update
 sudo apt-get install ubuntu-desktop
 
-[Clone Required Repos]
-git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam
-git clone https://github.com/KumarRobotics/ublox.git
-git clone https://github.com/Slamtec/rplidar_ros
-git clone https://github.com/tilk/rtcm_msgs
 
 ```
 
@@ -49,6 +44,17 @@ A step-by-step series of examples that tell you how to get a development environ
 3. Run catkin_make
    ```
    catkin_make
+   ```
+4. Navigate to the src directory:
+   ```
+   cd catamaran_shu_v2\src
+   ```
+5. Clone Required Repos
+   ```
+   git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam
+   git clone https://github.com/KumarRobotics/ublox.git
+   git clone https://github.com/Slamtec/rplidar_ros
+   git clone https://github.com/tilk/rtcm_msgs
    ```
 
 ## Usage
