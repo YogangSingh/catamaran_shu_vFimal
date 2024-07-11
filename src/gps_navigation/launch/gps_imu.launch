@@ -1,0 +1,7 @@
+<launch>
+  <!-- Launching vel_con.py -->
+  <node pkg="gps_navigation" type="gps_imu_node.py" name="gps_imu_node" output="screen">
+    <!-- Add any additional parameters or remappings if needed -->
+  </node>
+
+</launch>

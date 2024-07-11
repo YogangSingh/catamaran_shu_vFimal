@@ -1,0 +1,25 @@
+<launch>
+
+    <!-- Run the ROSSERIAL node for IMU-->
+    <include file="$(find gps_navigation)/launch/ros_arduino.launch" />
+
+    <!-- Run the GPS bring up node currently on /dev/ttyUSB1-->
+    <include file="$(find gps_navigation)/launch/nmea_serial_driver.launch" />
+
+    <!-- Run the navsat_transform node -->
+    <include file="$(find gps_navigation)/launch/start_navsat.launch" />
+
+    <!-- Run the vel_con and the gpsimu2odom nodes -->
+    <!--include file="$(find gps_navigation)/launch/extras.launch" /--> 
+
+    <!-- Run the RPLidar Startup node -->
+    <include file="$(find rplidar_ros)/launch/rplidar_s2.launch" />
+
+    <!-- Run the hector slam node -->
+    <include file="$(find hector_slam_launch)/launch/tutorial.launch" />
+    
+    <!-- Run the robot_localization file -->
+    <include file="$(find gps_navigation)/launch/ekf_localization.launch" />
+
+    
+</launch>
