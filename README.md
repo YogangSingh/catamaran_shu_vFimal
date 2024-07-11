@@ -26,6 +26,13 @@ wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/
 [Install Ubuntu and Ubuntu Desktop on Raspberry Pi]
 sudo apt-get update
 sudo apt-get install ubuntu-desktop
+
+[Clone Required Repos]
+git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam
+git clone https://github.com/KumarRobotics/ublox.git
+git clone https://github.com/Slamtec/rplidar_ros
+git clone https://github.com/tilk/rtcm_msgs
+
 ```
 
 ### Installing
